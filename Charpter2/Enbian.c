@@ -32,9 +32,7 @@ void test_show_bytes(int val) {
     show_pointer(ival);
 }
 
-int main(int argc, char const *argv[])
-{
-
+int main(int argc, char const *argv[]) {
 	for (int i=0; i<sizeof(argv)/sizeof(argv[0]); i++) {
 		test_show_bytes(&argv[i]);
 	}
